@@ -34,13 +34,13 @@ public class GuestbookController {
 	@RequestMapping( "/delete" )
 	public String delete( @ModelAttribute Guestbook guestbook ) {
 		guestbookService.deleteMessage( guestbook );
-		return "redirect:/guestbook";
+		return "redirect:/";
 	}
 
 	@RequestMapping( "/insert" )
 	public String insert( @ModelAttribute Guestbook guestbook ) {
 		guestbookService.insertMessage( guestbook );
-		return "redirect:/guestbook";
+		return "redirect:/";
 	}
 
 

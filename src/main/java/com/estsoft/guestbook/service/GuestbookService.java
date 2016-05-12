@@ -10,7 +10,7 @@ import com.estsoft.guestbook.domain.Guestbook;
 import com.estsoft.guestbook.repository.GuestbookRepository;
 
 @Service
-
+@Transactional
 public class GuestbookService {
 	@Autowired
 	GuestbookRepository guestbookRepository;
@@ -25,5 +25,6 @@ public class GuestbookService {
 	
 	public void insertMessage( Guestbook guestbook ) {
 		guestbookRepository.save( guestbook );
+		// guestbook 는 영속 객체
 	}
 }
