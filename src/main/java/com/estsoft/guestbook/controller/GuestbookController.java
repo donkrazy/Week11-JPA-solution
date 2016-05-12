@@ -39,7 +39,7 @@ public class GuestbookController {
 
 	@RequestMapping( "/insert" )
 	public String insert( @ModelAttribute Guestbook guestbook ) {
-		guestbookService.insertMessage(guestbook);
+		guestbookService.insertMessage( guestbook );
 		return "redirect:/guestbook";
 	}
 
