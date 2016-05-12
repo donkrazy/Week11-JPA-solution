@@ -18,7 +18,6 @@ public class GuestbookRepository {
 	@PersistenceContext
 	private EntityManager em;
 	
-	@Transactional
 	public void save( Guestbook guestbook ) {
 		guestbook.setRegDate( new Date() );
 		em.persist( guestbook );

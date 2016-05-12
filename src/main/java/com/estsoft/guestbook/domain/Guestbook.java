@@ -34,10 +34,6 @@ public class Guestbook {
 	@Column( name = "reg_date", nullable = false )
 	@Temporal( value = TemporalType.TIMESTAMP )
 	private Date regDate;
-
-//	@Column(name = "gender", nullable = false, columnDefinition="enum('FEMALE', 'MALE')" )
-//	@Enumerated( EnumType.STRING )
-//	private Gender gender;
 	
 	public Long getNo() {
 		return no;
